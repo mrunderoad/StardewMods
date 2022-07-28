@@ -44,7 +44,7 @@ namespace MyFirstMod
             if (!Context.IsWorldReady)
             return;
 
-            //Checks for button press
+            //Checks for button press or Controller press
             if (isDown == true)
             {
                 this.Monitor.Log($"A random $2000 appeared in your bank!", LogLevel.Debug);
