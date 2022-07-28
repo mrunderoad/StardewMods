@@ -1,0 +1,10 @@
+﻿{
+  "Name": "MyFirstMod",
+  "Author": "IsaacO",
+  "Version": "1.0.0",
+  "Description": "<One or two sentences about the mod>",
+  "UniqueID": "MyFirstMod.IsaacO",
+  "EntryDll": "MyFirstMod.dll",
+  "MinimumApiVersion": "3.0.0",
+  "UpdateKeys": []
+}
