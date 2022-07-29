@@ -48,14 +48,14 @@ namespace MyFirstMod
             if (isDown == true)
             {
                 this.Monitor.Log($"A random $2000 appeared in your bank!", LogLevel.Debug);
-                Game1.player.Money -= 2000;
+                Game1.player.Money += 2000;
             }
 
             if (HomeBtn == true)
             {
                 if (Game1.player.Money <= 499)
                 {
-                    this.Monitor.Log($"You dont have enough money to teleport right now. You need $500 and you only have {Game1.player.Money}.");
+                    this.Monitor.Log($"You dont have enough money to teleport right now. You need $500. You only have ${Game1.player.Money}!", LogLevel.Info);
                 }
                 else
                 {
@@ -69,10 +69,9 @@ namespace MyFirstMod
             {
                 Game1.player.Speed += 3;
             }
-            // print button presses to the console window
-            //this.Monitor.Log($"{Game1.player.Name} of {Game1.player.farmName} pressed {e.Button}.", LogLevel.Debug);
 
-           
+            // print button presses to the console window
+            //this.Monitor.Log($"{Game1.player.Name} of {Game1.player.farmName} pressed {e.Button}.", LogLevel.Debug);           
         }
     }
 }
